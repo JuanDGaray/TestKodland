@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 64.5%;
+    font-family: 'Oswald', sans-serif;;
+}
+
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+/* HEADER */
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:60px;
+    background-color: #ffbf69;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+.nav--span{
+    position: absolute;
+    visibility:hidden;
+}
+header span{
+    margin: auto 5rem;
+}
+header nav {
+    display: inline-flex;
+    
+}
+header nav ul {
+    align-items: flex-end;
+    margin: auto 5rem;
+    
+}
+header nav ul li{
+    display: inline-flex;
+    margin: 0 1rem;
+    padding: 6px 10px;
+    border-radius: 16px;  
+}
+
+header nav ul li:hover{
+    background-color: #f5d6b2; 
+}
+
+
+/* MAIN */
+
+main .mainone{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 450px;
+    background-image: url(./assest/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:80%;
+    background-color: #ffbf69;
+}
+
+main .mainone__text{
+    width: 50%;
+    padding: 0 10% ;
+}
+main .mainone__text h1{
+    font-size: 8.4rem;
+    color: aliceblue;
+}
+main .mainone__text h2{
+    color: aliceblue;
+}
+
+main .button{
+    margin: 14px auto;
+    padding: 10px 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 0;
+    background-color: #cbf3f0;
+    border: solid 1px #cbf3f0;
+}
+
+
+main .maintwo{
+    width: 60%;
+    display: flexbox;
+    text-align: center;
+    margin: 6rem auto;
+}
+
+main .h2--main{
+    font-size: 2.4rem;
+}
+
+main .p--main{
+    font-size: 1.2rem;
+    margin: 1.4rem 0;
+}
+
+main .mainthree{
+    width: 100%;
+    background-color: #cbf3f0;
+    text-align: center;
+    padding: 1.4rem 0;
+
+}
+
+main .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 24px auto;
+
+}
+main .cards .card{
+    width: 200px;
+    height: 230px;
+    background-color:#d1f5f2;
+    border-radius: 8px;
+    padding: 1.4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  solid 1px #d7faf8;
+    box-shadow: 11px -11px 49px -11px rgba(145, 145, 145, 0.452);
+
+}
+main .cards .card__span{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 15px;
+}
+
+main .cards .card__one--span{
+    background-image: url(./assest/square.png);
+}
+
+main .cards .card__two--span{
+    background-image: url(./assest/amongus.png);
+}
+
+main .cards .card__three--span{
+    background-image: url(./assest/round.png);
+}
+
+main .card .card__title{
+    font-size: 1rem;
+}
+
+main .card__button{
+    background-color: #ffbf69;
+    
+}
+
+main .button:hover{
+    cursor: pointer;
+    border: solid 1px rgba(0, 0, 0, 0.397);
+}
+
+main .mainfourt{
+    height: 20rem;
+    width: 100%;
+    background-image: url(./assest/bg-grid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+main .mainfourt__container{
+    max-width: 900px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin: 0 40px;
+}
+main .mainfourt__textcontainer{
+    padding: 15px;
+}
+main .mainfourt__imgcontainer img{
+    width: 100%;
+    padding: 15px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+}
+
+footer ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 10vw;
+    vertical-align: ce;
+}
+
+footer ul li{
+    display: inline-flex;
+    margin: 0 1rem;
+    padding: 6px 10px;
+    font-size: 1.4rem;
+    color: #dadada;
+    align-items: center;
+}

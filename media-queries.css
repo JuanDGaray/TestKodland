@@ -1,0 +1,92 @@
+@media( max-width:800px) {
+    header .nav__list{
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        margin: 0;
+        padding: 60px 20px 20px 20px;
+        background-color: #ffbf69;
+        visibility:hidden;
+    }
+    .nav--span{
+        width: 30px;
+        height: 30px;
+        background-image: url(./assest/bars-solid.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -8px;
+        top:15px;
+        visibility: visible;
+    }
+
+    .nav--span:hover .nav__list{
+        visibility:visible;
+        
+    }
+
+    header  .nav__list li{
+        display: block;
+        margin: 0 0;
+        padding: 0;
+
+    }
+
+    main .mainone__text{
+        width: 80%;
+        padding: 0 10% ;
+    }
+
+    main .cards{
+        grid-template: 1fr 1fr 1fr / 1fr ;
+
+    }
+    main .card{
+        margin-top:40px;
+    }
+
+    main .mainone{
+
+    }
+    main .mainone__text{
+    width: 50%;
+    padding: 0 10% ;
+    }
+    main .mainone__text h1{
+        font-size: 6.4rem;
+    }
+    
+    footer ul li:nth-child(n+1){
+        display: block ;
+        left: 0;
+        visibility: hidden;
+    }
+
+}
+
+@media(max-width:555px){
+    main .mainone__text h1{
+        font-size: 4rem;
+
+    }
+    main .mainone__text h2{
+        text-overflow: ellipsis;
+    }
+    main .mainfourt__container{
+        grid-template: 1fr 1fr / 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    main .mainfourt{
+        height: 500px;
+    }
+    main .mainfourt__imgcontainer img{
+        width: 200px;
+        display: flex;
+
+    }
+
+    footer ul li{
+        font-size: 0rem;
+    }
+}
